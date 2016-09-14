@@ -1,0 +1,528 @@
+/*
+Código CSS/HTML/JS por Gustavo Domingues Stefani, Bruno Ventorin dos Santos e Jean Barreto
+Disciplina: Design da Informação e Tecnologias da Informação;
+Turma de Design Digital da Universidade Federal de Pelotas (3º semestre)
+Novembro de 2014
+
+Código de Referência por: WebDesignCrowd e CoDrops.
+    
+*/
+
+/* Códigos de estilo geral para toda a página */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, li, ul, 
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  width: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Definição de Tipografia */
+@font-face {
+    font-family: 'MontserratBold';
+    font-style: normal;
+    src: url("fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: 'MontserratRegular';
+    font-style: normal;
+    src: url("fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: 'PTSans';
+    font-style: normal;
+    src: url("fonts/PT-Sans.ttf");
+}
+@font-face {
+    font-family: 'PTSansBold';
+    font-style: normal;
+    src: url("fonts/PT-Sans-Bold.ttf");
+}
+
+html,body { height: 100%; }
+body {
+  color: #fff;
+  margin: 0 auto;
+  font: 1em/1.3em Helvetica, sans-serif;
+	background-color: #333;  
+}
+/* Estilo do Cabeçalho */
+.header {
+  margin-bottom: 40px;
+}
+.clearfix {
+  clear: both;
+}
+/* Estilo do fundo de todas as páginas. O valor Background é usado no menu superior */
+.container {
+  z-index: 1;
+  position: relative;
+  background: #1BA39C;
+  background-image: url(../images/bg.png);
+  background-repeat: repeat;
+  padding-top: 70px;
+  text-align: center;
+  height: 100%;
+}
+  .container.blue {
+   background: #2574a9;
+   background-image: url(../images/bg.png);
+    background-repeat: repeat;
+  }
+  .container.purple {
+    background: #663399;
+    background-image: url(../images/bg.png);
+    background-repeat: repeat;
+  }
+  .container.pink {
+   background: #F62459;
+   background-image: url(../images/bg.png);
+    background-repeat: repeat;
+  }
+  .container.red {
+   background: #CF000F;
+   background-image: url(../images/bg.png);
+    background-repeat: repeat;
+  }
+  .container.orange {
+    background: #ef7f08;
+    background-image: url(../images/bg.png);
+    background-repeat: repeat;
+  }
+  .container.yellow {
+   background: #ffc000;
+   background-image: url(../images/bg.png);
+    background-repeat: repeat;
+  }
+  .container.green {
+   background: #32aa08;
+   background-image: url(../images/bg.png);
+    background-repeat: repeat;
+  }
+/* Estilo de Títulos e Linsks */
+h1 {
+  margin: 40px 0;
+  font-size: 55px;
+  line-height: 40px;
+  text-shadow: 0px 1px 1px #888;
+  font-family: MontserratBold;
+  text-transform: uppercase;
+  margin-bottom: -10px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-shadow: 0px 1px 1px #888;
+  font-family: MontserratRegular;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;  
+  margin: 0 10px;
+}
+
+/* Menu Superior */
+
+.menu {
+  width: 100%;
+  position: fixed;
+  height: 80px;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+  .menu .slider {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+  }
+  
+    .menu .slider .bar, .menu .slider .bar .before {
+      height: 20px;
+ 
+      transition: .5s; 
+      -webkit-transition: .5s; 
+     
+      border-radius: 20px;
+      -moz-border-radius: 20px;
+      -webkit-border-radius: 20px;
+    }
+    
+    .menu .slider .bar {
+      position: relative;
+      left: 3px;
+      width: 100%;
+      background-color: #777;
+    }
+      .menu .slider .bar .before {
+        width: 100px;
+        float: left;
+        position: relative;
+        left: -3px;
+      }
+      .menu .slider .bar a.knob { 
+        position: absolute;
+        top: -5px;
+        left: 0;
+        margin: 0;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: #ccc;
+
+        border-radius: 15px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        
+        transition: .5s; 
+        -webkit-transition: .5s; 
+      }
+    .menu ul { 
+      height: 100%; 
+      display: inline-block;
+      margin: 10px 0 10px 0;
+    }
+    .menu ul li {
+      margin: 0 35px;
+      font-size: 12px;
+      font-weight: bold;
+      float: left;
+    }
+    .menu ul li a { color: #444; margin: 0; }
+    
+.cabeca, .cabeca1, .conteudo {
+  margin: 0 auto;
+}
+
+/* Estrutura geral das páginas e seus títulos. Abaixo, há 3 versões de grids diferentes */
+.cabeca {
+    width:80%;
+    height:120px;
+    position: relative;
+}
+.cabeca h1 {
+    text-align: left;
+    padding-top: 20px;
+  }
+.cabeca h2 {
+    text-align: left;
+    padding-top: 15px;
+}
+.cabeca1 {
+    width:80%;
+    height:90px;
+    position: relative;
+}
+.cabeca1 h1 {
+    font-size: 45px;
+    text-align: left;
+    padding-top: 0px;
+  }
+.cabeca1 h2 {
+    font-size: 25px;
+    text-transform: none;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.conteudo {
+    position: relative;
+    width:80%;
+    height:70%;
+}
+
+.conteudo-left{
+    width:49%;
+    height:90%;
+    float:left;
+}
+.conteudo-left img {
+  padding: 20px;
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+  -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.conteudo-left img:hover {
+   opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.conteudo-left1{
+    width:70%;
+    height:70%;
+    float:left;
+}
+.conteudo-left1 img {
+  padding: 20px;
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+  -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.conteudo-left1 img:hover {
+   opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.conteudo-right{
+    width:49%;
+    height:90%;
+    float: right;
+    font-family: PTSans;
+}
+.conteudo-right1{
+    width:30%;
+    height:90%;
+    float: right;
+    /* background-color: #F00;  */
+    font-family: PTSans;
+}
+
+
+.conteudo-right p {
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 24px;
+}
+.conteudo-right img {
+  padding: 20px;
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+  -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.conteudo-right img:hover {
+   opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.conteudo-right1 img {
+  padding: 20px;
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+  -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.conteudo-right1 img:hover {
+   opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.conteudo-right1 p {
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 24px;
+}
+.conteudo-right1 p {
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 24px;
+}
+/* Grid da página Consoles */
+.conteudo-consoles-top{
+    width:100%;
+    height:49%;
+    float:left;
+    margin-top: -45px;
+}
+.conteudo-consoles-top img {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+  -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.conteudo-consoles-top img:hover {
+   opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.conteudo-consoles-bottom{
+    margin-top: 30px;
+    width:100%;
+    height:49%;
+    float: left;
+    font-family: PTSans;
+}
+.conteudo-consoles-bottom img {
+  padding: 20px;
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+  -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.conteudo-consoles-bottom img:hover {
+   opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+/*Grid da página Créditos */
+.conteudo-creditos-top{
+    width:100%;
+    height:49%;
+    float:left;
+}
+.conteudo-creditos-top img {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+  -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.conteudo-creditos-top img:hover {
+   opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.conteudo-creditos-bottom{
+    margin-top: 20px;
+    width:100%;
+    height:49%;
+    float: left;
+    font-family: PTSans;
+}
+.conteudo-creditos-bottom img {
+  padding: 20px;
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+  -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.conteudo-creditos-bottom img:hover {
+   opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+
+/* Mensagem de aviso na página inicial */
+.alert-message {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: block;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  background-color: #2ba6cb;
+  border: 3px solid #2ba6cb;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  position: relative;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.alert-message img{
+    display: block;
+    float: left;
+    margin-right: 30px;
+    margin-left: 18px;
+    height: 100px;
+    width: 60px;
+    position: relative;
+    left: 5px;
+  -webkit-animation-name: pulsate;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite
+}
+@-webkit-keyframes pulsate {
+    0% { opacity: 0.5}
+    50% { opacity: 1.0}
+    100% { opacity: 0.5}
+}
+
+.alert-message p {
+  padding: 20px;
+  margin-left: 100px;
+}
+
+.alert-message:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+/* Estilos de títulos presentes em diversos elementos específicos */
+.welcome2 h1 {
+  position: relative;
+  font-size: 30px;
+  text-shadow: 0 2px 0 rgba(0,0,0,.2);
+  line-height: normal;
+  color: #ddd;
+}
+.gamer h2 {
+  text-align: left;
+  position: relative;
+  font-size: 20px;
+  text-shadow: 0 2px 0 rgba(0,0,0,.2);
+  line-height: normal;
+  color: #ddd;
+}
+.gamer2 h2 {
+  text-transform: none;
+  text-align: left;
+  position: relative;
+  font-size: 40px;
+  text-shadow: 0 2px 0 rgba(0,0,0,.2);
+  line-height: normal;
+  color: #ddd;
+}
+.gamer3 h2{
+    font-size: 25px;
+    text-transform: none;
+    text-align: left;
+    padding-top: 15px;
+}
+/* Estilo para ilustrações de fundo */
+#home .ilustra {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}

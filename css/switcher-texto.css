@@ -1,0 +1,45 @@
+/* Switcher animado para palavras
+Código baseado em código disponibilizado gratuitamente por WebDesignCrowd.com */
+
+    h2.welcome span.tagline {
+      position: relative;
+      font-size: 30px;
+      text-shadow: 0 2px 0 rgba(0,0,0,.2);
+      line-height: normal;
+      color: #ddd;
+    }
+      h2.welcome span.tag-change {
+        top: 0;
+        display: inline-block;
+        text-align: left;
+        width: 60px;
+        height: 28px;
+        margin-left: -5px;
+      }
+      h2.welcome span.tag-change a {
+        position: absolute;
+        top: 0;
+        margin: 0;
+        padding: 0 5px;
+        color: transparent;
+        text-shadow: none;
+
+        transition: .5s;
+        -webkit-transition: .5s;
+      }
+
+      #home h2.welcome2 span.tag-change a.active { top: 0; }
+
+      /* Cores */
+      h2.welcome span.tag-change a.active.purple { color: #a870cc; }
+      h2.welcome span.tag-change a.active.blue { color: #36a7f3; }
+      h2.welcome span.tag-change a.active.green { color: #85bf00; }
+      h2.welcome span.tag-change a.active.red { color: #ff6b6b; }
+
+
+      /* Animação */
+      body.flip-vertical h2.welcome span.tag-change { perspective: 1000; }
+      body.flip-vertical h2.welcome span.tag-change a { transform: rotateX(180deg); }
+      body.flip-vertical #home h2.welcome span.tag-change a.active { transform: rotateX(0deg); }
+
+

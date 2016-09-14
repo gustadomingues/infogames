@@ -1,0 +1,86 @@
+/* Gráfico de faturamento da página "Faturamento"
+Baseado em código de Marcin Dziewulski para Codrops  */
+
+@font-face {
+    font-family: 'PTSans';
+    font-style: normal;
+    src: url("PT-Sans.ttf");
+}
+@font-face {
+    font-family: 'PTSansBold';
+    font-style: normal;
+    src: url("PT-Sans-Bold.ttf");
+}
+@font-face {
+    font-family: 'MontserratRegular';
+    font-style: normal;
+    src: url("Montserrat-Regular.ttf");
+}
+.legend {
+float: left;
+}
+
+.legend h1 {
+  font-size: 30px;
+  line-height: 30px;
+  text-shadow: 0px 1px 1px #888;
+  font-family: MontserratRegular;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.skills {
+float:left;
+clear:both;
+margin-top: 140px;
+margin-left: -10px;
+}
+
+.skills ul,
+.skills li {
+display:block;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+.skills li {
+float:right;
+clear:both;
+padding:5px 15px 0 15px;
+height:35px;
+line-height:35px;
+color:#fff;
+font-size:20px;
+font-family: PTSans;
+}
+
+.skills .jq {
+background:#f6265a;
+}
+
+.skills .css {
+background:#e21639;
+}
+
+.skills .html {
+background:#c70307;
+}
+
+.skills .php {
+background:#fe0a00;
+}
+
+.skills .sql {
+background:#EDEBEE;
+}
+#diagram {
+float:right;
+width: 500px;
+height: 460px;
+margin-top: -70px;
+margin-left: -80px;
+}
+.get {
+display:none;
+}

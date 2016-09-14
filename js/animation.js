@@ -1,0 +1,1 @@
+!function(a){a(function(){a("span.mask").hover(function(){a(this).siblings("a img").addClass("hovering"),a(this).parent().siblings(".portfolio-title").children("h4").stop().animate({top:-20},350)},function(){a(this).siblings("a img").removeClass("hovering"),a(this).parent().siblings(".portfolio-title").children("h4").stop().animate({top:0},350)})})}(jQuery);

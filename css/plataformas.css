@@ -1,0 +1,120 @@
+/* Menu estilo "Slide-UP" presente na página "Consoles" */
+
+@font-face {
+    font-family: 'MontserratRegular';
+    font-style: normal;
+    src: url("Montserrat-Regular.ttf");
+}
+/* Estilo da barra - mesmo que invisível */
+#bar {
+	font-family: MontserratRegular;
+	font-size: 15px;
+display: inline-block;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+#bar li {
+      display: table-cell;
+      width: 160px;
+      height: 200px;
+      text-align: center;
+      position: relative;
+}
+
+#bar li div.top { position:absolute; float:left; bottom:0;
+	bottom: 40px;
+	width:130px; height:100px; 
+	-webkit-transition-property: margin-bottom;
+	-webkit-transition-duration: 500ms;
+}
+#bar li div.top img { margin-top:20px;}
+
+#bar li div.bottom { float:left; position:absolute; width:130px;
+	bottom: 15px;
+	height:100px;
+	-webkit-transition-property: height;
+	-webkit-transition-duration: 500ms;
+}
+#bar li div.bottom div.infobox { padding:80px 0 0 0;
+	-webkit-transition-property: color;
+	-webkit-transition-duration: 500ms;
+	position: relative;
+}
+#bar li div.bottom div.infobox p { opacity: 0;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 500ms;
+}
+#bar li div.bottom div.infobox2 { padding:80px 0 0 0;
+	-webkit-transition-property: color;
+	-webkit-transition-duration: 500ms;
+	position: relative;
+}
+#bar li div.bottom div.infobox2 p { opacity: 0;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 500ms;
+}
+
+/* Ações Hover */
+#bar li:hover div.bottom div.infobox { color:#eee;  text-shadow: 0px 1px 1px #888; bottom: 40px; font-size: 18px; }
+#bar li:hover div.bottom div.infobox p { opacity:1; font-size: 30px; line-height: 30px; }
+
+/* Ações Hover 2 */
+#bar li:hover div.bottom div.infobox2 { color:#eee;  text-shadow: 0px 1px 1px #888; bottom: 180px; font-size: 18px; }
+#bar li:hover div.bottom div.infobox2 p { opacity:1; font-size: 30px; line-height: 30px; }
+
+
+/* Android */
+#android div.top { z-index:99; }
+#android div.bottom { z-index:98; height:208px; }
+#android:hover div.top { z-index:999; margin-bottom:160px; }
+#android:hover div.bottom { z-index:998; height:208px;
+	background:#ffc846; }
+
+/* IOS */
+#ios div.top { z-index:97; }
+#ios div.bottom { z-index:96; height:200px; }
+#ios:hover div.top { z-index:997; margin-bottom:140px; }
+#ios:hover div.bottom { z-index:996; height:200px;
+	background:#f8c31d; }
+
+/* Windows Phone */
+#wphone div.top { z-index:95; }
+#wphone div.bottom { z-index:94; height:118px; }
+#wphone:hover div.top { z-index:995; margin-bottom:80px; }
+#wphone:hover div.bottom { z-index:994;  height:118px;
+	background:#bdb40d; }
+
+/* Windows PC */
+#windows div.top { z-index:93; }
+#windows div.bottom { z-index:92; height:166px; }
+#windows:hover div.top { z-index:993;  margin-bottom:110px; }
+#windows:hover div.bottom { z-index:992;  height:166px;
+	background:#e8b51e; }
+
+/* MAC */
+#mac div.top { z-index:91; }
+#mac div.bottom { z-index:90; height:102px; }
+#mac:hover div.top { z-index:991;  margin-bottom:50px; }
+#mac:hover div.bottom { z-index:990;  height:102px;
+	background:#bfb20c; }
+
+/* PlayStation 3 */
+#ps3 div.top { z-index:91; }
+#ps3 div.bottom { z-index:90; height:12px; }
+#ps3:hover div.top { z-index:991;  margin-bottom:-30px; }
+#ps3:hover div.bottom { z-index:990;  height:12px;
+	background:#bda30e; }
+
+/* Xbox 360 */
+#x360 div.top { z-index:91; }
+#x360 div.bottom { z-index:90; height:8px; }
+#x360:hover div.top { z-index:991;  margin-bottom:-33px; }
+#x360:hover div.bottom { z-index:990;  height:8px;
+	background:#947a01; }
+
+/* Nintendo Wii */
+#wii div.top { z-index:91; }
+#wii div.bottom { z-index:90; height:2px; }
+#wii:hover div.top { z-index:991;  margin-bottom:-38px; }
+#wii:hover div.bottom { z-index:990;  height:2px;
+	background:#9a9805; }

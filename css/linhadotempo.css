@@ -1,0 +1,143 @@
+/* Linha do Tempo presente na página "Evolução"
+Baseado em código free-source disponível em tympanus.net/codrops */
+
+@font-face {
+    font-family: 'PTSans';
+    font-style: normal;
+    src: url("PT-Sans.ttf");
+}
+@font-face {
+    font-family: 'PTSansBold';
+    font-style: normal;
+    src: url("PT-Sans-Bold.ttf");
+}
+
+.linhadotempo {
+	margin: 30px 0 0 0;
+	padding-right: 30px;
+	list-style: none;
+	position: relative;
+ 	font-family: 'PT-Sans', Arial, sans-serif;
+    color: #47a3da;
+	width: 100%;
+} 
+.linhadotempo img {
+	width: 70px;
+	height: 70px;
+	float: left;
+	padding: 0 30px 0 0;
+	margin: 0 -20px;
+}
+
+/* A linha */
+.linhadotempo:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10px;
+	background: #afdcf8;
+	left: 18%;
+	margin-left: -15px;
+}
+
+.linhadotempo > li {
+	position: relative;
+	margin-bottom: -10px;
+}
+
+/* O ano */
+.linhadotempo > li .cbp_tmtime {
+	display: block;
+	width: 20%;
+	padding-right: 130px;
+	position: absolute;
+}
+
+/* O ano */
+.linhadotempo > li .cbp_tmtime {
+	display: block;
+	width: 25%;
+	padding-right: 100px;
+	position: absolute;
+}
+
+.linhadotempo > li .cbp_tmtime span {
+	display: block;
+	text-align: left;
+}
+
+.linhadotempo > li .cbp_tmtime span:first-child {
+	font-size: 0.9em;
+	color: #bdd0db;
+}
+
+.linhadotempo > li .cbp_tmtime span:last-child {
+	font-size: 27px;
+	color: #3594cb;
+}
+
+.linhadotempo > li:nth-child(odd) .cbp_tmtime span:last-child {
+	color: #6cbfee;
+}
+
+/* Texto */
+.linhadotempo > li .cbp_tmlabel {
+	margin: 0 0 15px 25%;
+	background: #3594cb;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 30px;
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.4;
+	position: relative;
+}
+
+.linhadotempo > li:nth-child(odd) .cbp_tmlabel {
+	background: #6cbfee;
+}
+
+.linhadotempo > li .cbp_tmlabel h2 { 
+	margin-top: 0px;
+	padding: 0 0 2px 0;
+	text-transform: none;
+	font-size: 15px;
+}
+
+/* Caixa de Diálogo */
+.linhadotempo > li .cbp_tmlabel:after {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #3594cb;
+	border-width: 10px;
+	top: 0px;
+}
+
+.linhadotempo > li:nth-child(odd) .cbp_tmlabel:after {
+	border-right-color: #6cbfee;
+}
+
+/* Bolinhas */
+.linhadotempo > li .cbp_tmicon {
+	width: 20px;
+	height: 20px;
+	line-height: 40px;
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+	color: #fff;
+	background: #46a4da;
+	border-radius: 50%;
+	box-shadow: 0 0 0 8px #afdcf8;
+	text-align: center;
+	left: 20%;
+	top: 0;
+	margin: 0 0 0 -25px;
+}

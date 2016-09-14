@@ -1,0 +1,51 @@
+/* Estilo do mapa do Brasil da página "Mapa" */
+
+.estado{
+            cursor:pointer;
+        }
+        .estado:hover {
+          -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+        }
+        #aux { 
+  float: left;
+  max-width: 130px;
+  max-height: 130px;
+  min-height: 0px;
+  margin-top: -220px;
+  margin-right: 20px;
+  display: block;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  background-color: #2973a4;
+  border: 3px solid #2973a4;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  position: absolute;}
+
+  #aux p{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.mapa ul{
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.mapa li{
+    padding-left: 2em; 
+}
+
+.mapa li:before {
+    position: absolute;
+    content: url(../images/bullet.png);
+    left: 0;
+}

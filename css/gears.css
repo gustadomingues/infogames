@@ -1,0 +1,795 @@
+/* Sistema de Engrenagens */
+
+/* Engrenagens - Esquerda */
+
+#gearsleft{
+	width:478px;
+	height:655px;
+	margin-top: 30px;
+	float: left;
+	position:relative;
+	display:inline-block;
+	vertical-align:middle;
+}
+#gearsleft-static{
+	background:url(../images/gears.png) no-repeat -363px -903px;
+	width:329px;
+	height:602px;
+	position:absolute;
+	bottom:4px;
+	right:0px;
+	opacity:0.4;
+}
+.gearleft15{
+	background: url(../images/gears.png) no-repeat 0 -993px;
+	width: 321px;
+	height: 321px;
+	position:absolute;
+	left:45px;
+	top:179px;
+
+	-webkit-animation: rotate-back 24000ms linear infinite;
+	-moz-animation: rotate-back 24000ms linear infinite;
+	-ms-animation: rotate-back 24000ms linear infinite;
+	animation: rotate-back 24000ms linear infinite;
+}
+
+.gearleft14{
+	background: url(../images/gears.png) no-repeat 0 -856px;
+	width: 87px;
+	height: 87px;
+	position:absolute;
+	left:162px;
+	top:296px;
+}
+
+.gearleft13{
+	background: url(../images/gears.png) no-repeat 0 -744px;
+	width: 62px;
+	height: 62px;
+	position:absolute;
+	left:174px;
+	top:309px;
+
+	-webkit-animation: rotate 8000ms linear infinite;
+	-moz-animation: rotate 8000ms linear infinite;
+	-ms-animation: rotate 8000ms linear infinite;
+	animation: rotate 8000ms linear infinite;
+}
+
+.gearleft10{
+	background: url(../images/gears.png) no-repeat 0 -184px;
+	width: 122px;
+	height: 122px;
+	position:absolute;
+	left:175px;
+	top:0;
+
+	-webkit-animation: rotate-back 8000ms linear infinite;
+	-moz-animation: rotate-back 8000ms linear infinite;
+	-ms-animation: rotate-back 8000ms linear infinite;
+	animation: rotate-back 8000ms linear infinite;
+}
+
+.gearleft3{
+	background: url(../images/gears.png) no-repeat 0 -1493px;
+	width: 85px;
+	height: 84px;
+	position:absolute;
+	left:194px;
+	top:19px;
+
+	-webkit-animation: rotate 10000ms linear infinite;
+	-moz-animation: rotate 10000ms linear infinite;
+	-ms-animation: rotate 10000ms linear infinite;
+	animation: rotate 10000ms linear infinite;
+}
+
+.gearleft9{
+	background: url(../images/gears.png) no-repeat -371px -280px;
+	width: 234px;
+	height: 234px;
+	position:absolute;
+	left:197px;
+	top:96px;
+
+	-webkit-animation: rotate 12000ms linear infinite;
+	-moz-animation: rotate 12000ms linear infinite;
+	-ms-animation: rotate 12000ms linear infinite;
+	animation: rotate 12000ms linear infinite;
+}
+
+/* Engines */
+.unity{
+	background: #ffc207;
+	width: 133px;
+	height: 147px;
+	position:absolute;
+	left:248px;
+	top:140px;
+	opacity: 0;
+	 transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+.unity:hover {
+	opacity: 1;
+}
+.unity h2{
+	margin-top: -20px;
+	font-size: 20px;
+	text-align: center;
+	text-transform: none;
+}
+.unity img{
+	padding: 30px 0 0 0;
+}
+.unity img:hover{
+	opacity: 1;
+}
+.tecpro{
+	background: #f9b82a;
+	width: 70px;
+	height: 70px;
+	position:absolute;
+		left:32px;
+	top:133px;
+
+	opacity: 0;
+	 transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+.tecpro:hover {
+	opacity: 1;
+}
+.tecpro h2{
+	margin-top: -21px;
+	font-size: 12px;
+	text-align: center;
+	text-transform: none;
+	line-height: 12px;
+}
+.tecpro img{
+	padding: 20px 0 0 0;
+}
+.tecpro img:hover{
+	opacity: 1;
+}
+.cocos{
+	background: #f3ae49;
+	width: 60px;
+	height: 60px;
+	position:absolute;
+left:206px;
+	top:26px;
+
+	opacity: 0;
+	 transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+.cocos:hover {
+	opacity: 1;
+}
+.cocos h2{
+	margin-top: -21px;
+	font-size: 12px;
+	text-align: center;
+	text-transform: none;
+	line-height: 12px;
+}
+.cocos img{
+	padding: 20px 0 0 0;
+}
+.cocos img:hover{
+	opacity: 1;
+}
+.blender3d{
+	background: #faddb3;
+	width: 68px;
+	height: 68px;
+	position:absolute;
+bottom:330px;
+left: 32px;
+	opacity: 0;
+	 transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+.blender3d:hover {
+	opacity: 1;
+}
+.blender3d h2{
+	margin-top: -21px;
+	font-size: 12px;
+	text-align: center;
+	text-transform: none;
+	line-height: 12px;
+}
+.blender3d img{
+	padding: 20px 0 0 0;
+}
+.blender3d img:hover{
+	opacity: 1;
+}
+
+.gearleft6{
+	background: url(../images/gears.png) no-repeat 0 -1931px;
+	width: 134px;
+	height: 134px;
+	position:absolute;
+	left:306px;
+	bottom:211px;
+
+	-webkit-animation: rotate-back 10000ms linear infinite;
+	-moz-animation: rotate-back 10000ms linear infinite;
+	-ms-animation: rotate-back 10000ms linear infinite;
+	animation: rotate-back 10000ms linear infinite;
+}
+
+.gearleft4{
+	background: url(../images/gears.png) no-repeat 0 -1627px;
+	width: 69px;
+	height: 69px;
+	position:absolute;
+	left:338px;
+	bottom:244px;
+
+	-webkit-animation: rotate-back 10000ms linear infinite;
+	-moz-animation: rotate-back 10000ms linear infinite;
+	-ms-animation: rotate-back 10000ms linear infinite;
+	animation: rotate-back 10000ms linear infinite;
+}
+
+.gearleft12{
+	background: url(../images/gears.png) no-repeat 0 -530px;
+	width: 164px;
+	height: 164px;
+	position:absolute;
+	left:208px;
+	bottom:85px;
+
+	-webkit-animation: rotate 8000ms linear infinite;
+	-moz-animation: rotate 8000ms linear infinite;
+	-ms-animation: rotate 8000ms linear infinite;
+	animation: rotate 8000ms linear infinite;
+}
+
+.gearleft11{
+	background: url(../images/gears.png) no-repeat 0 -356px;
+	width: 125px;
+	height: 124px;
+	position:absolute;
+	left:228px;
+	bottom:105px;
+
+	-webkit-animation: rotate-back 10000ms linear infinite;
+	-moz-animation: rotate-back 10000ms linear infinite;
+	-ms-animation: rotate-back 10000ms linear infinite;
+	animation: rotate-back 10000ms linear infinite;
+}
+
+.gearleft8{
+	background: url(../images/gears.png) no-repeat -371px -158px;
+	width: 72px;
+	height: 72px;
+	position:absolute;
+	left:254px;
+	bottom:131px;
+
+	-webkit-animation: rotate 6000ms linear infinite;
+	-moz-animation: rotate 6000ms linear infinite;
+	-ms-animation: rotate 6000ms linear infinite;
+	animation: rotate 6000ms linear infinite;
+}
+
+.gearleft1{
+	background: url(../images/gears.png) no-repeat 0 0;
+	width: 135px;
+	height: 134px;
+	position:absolute;
+	left:0;
+	bottom:295px;
+
+	-webkit-animation: rotate-back 10000ms linear infinite;
+	-moz-animation: rotate-back 10000ms linear infinite;
+	-ms-animation: rotate-back 10000ms linear infinite;
+	animation: rotate-back 10000ms linear infinite;
+}
+
+.gearleft5{
+	background: url(../images/gears.png) no-repeat 0 -1746px;
+	width: 134px;
+	height: 135px;
+	position:absolute;
+	left:0px;
+	top:102px;
+
+	-webkit-animation: rotate 10000ms linear infinite;
+	-moz-animation: rotate 10000ms linear infinite;
+	-ms-animation: rotate 10000ms linear infinite;
+	animation: rotate 10000ms linear infinite;
+}
+
+.gearleft2{
+	background: url(../images/gears.png) no-repeat 0 -1364px;
+	width: 80px;
+	height: 79px;
+	position:absolute;
+	left:110px;
+	top:335px;
+
+	-webkit-animation: rotate-back 8000ms linear infinite;
+	-moz-animation: rotate-back 8000ms linear infinite;
+	-ms-animation: rotate-back 8000ms linear infinite;
+	animation: rotate-back 8000ms linear infinite;
+}
+
+/* Engrenagens - Direita */
+
+#gearsright{
+	width:478px;
+	height:655px;
+	margin-top: 30px;
+	float: left;
+	position:relative;
+	display:inline-block;
+	vertical-align:middle;
+}
+#gearsright-static{
+	background:url(../images/gears.png) no-repeat -363px -903px;
+	width:329px;
+	height:602px;
+	position:absolute;
+	bottom:5px;
+	right:0px;
+	opacity:0.4;
+}
+
+.gearright15{
+	background: url(../images/gears.png) no-repeat 0 -993px;
+	width: 321px;
+	height: 321px;
+	position:absolute;
+	left:45px;
+	top:179px;
+
+	-webkit-animation: rotate-back 24000ms linear infinite;
+	-moz-animation: rotate-back 24000ms linear infinite;
+	-ms-animation: rotate-back 24000ms linear infinite;
+	animation: rotate-back 24000ms linear infinite;
+}
+
+.gearright14{
+	background: url(../images/gears.png) no-repeat 0 -856px;
+	width: 87px;
+	height: 87px;
+	position:absolute;
+	left:160px;
+	top:296px;
+}
+
+.gearright13{
+	background: url(../images/gears.png) no-repeat 0 -744px;
+	width: 62px;
+	height: 62px;
+	position:absolute;
+	left:328px;
+	top:30px;
+
+	-webkit-animation: rotate 6000ms linear infinite;
+	-moz-animation: rotate 6000ms linear infinite;
+	-ms-animation: rotate 6000ms linear infinite;
+	animation: rotate 6000ms linear infinite;
+}
+
+.gearright10{
+	background: url(../images/gears.png) no-repeat -427px -1858px;
+	width: 146px;
+	height: 146px;
+	position:absolute;
+	left:125px;
+	top:263px;
+
+	-webkit-animation: rotate 9000ms linear infinite;
+	-moz-animation: rotate 9000ms linear infinite;
+	-ms-animation: rotate 9000ms linear infinite;
+	animation: rotate 9000ms linear infinite;
+}
+
+.gearright3{
+	background: url(../images/gears.png) no-repeat 0 -1493px;
+	width: 85px;
+	height: 84px;
+	position:absolute;
+	left:219px;
+	top:19px;
+
+	-webkit-animation: rotate 10000ms linear infinite;
+	-moz-animation: rotate 10000ms linear infinite;
+	-ms-animation: rotate 10000ms linear infinite;
+	animation: rotate 10000ms linear infinite;
+}
+
+.gearright9{
+	background: url(../images/gears.png) no-repeat -378px -1543px;
+	width: 234px;
+	height: 234px;
+	position:absolute;
+	left:-8px;
+	top:15px;
+
+	-webkit-animation: rotate 12000ms linear infinite;
+	-moz-animation: rotate 12000ms linear infinite;
+	-ms-animation: rotate 12000ms linear infinite;
+	animation: rotate 12000ms linear infinite;
+}
+
+.gearright7{
+	background: url(../images/gears.png) no-repeat -371px 0;
+	width: 108px;
+	height: 108px;
+	position:absolute;
+	left:260px;
+	top:159px;
+
+	-webkit-animation: rotate-back 10000ms linear infinite;
+	-moz-animation: rotate-back 10000ms linear infinite;
+	-ms-animation: rotate-back 10000ms linear infinite;
+	animation: rotate-back 10000ms linear infinite;
+}
+.gearright:hover {
+	-webkit-animation: 0;
+}
+
+.gearright6{
+	background: url(../images/gears.png) no-repeat 0 -1931px;
+	width: 134px;
+	height: 134px;
+	position:absolute;
+	left:250px;
+	bottom:280px;
+
+	-webkit-animation: rotate-back 10000ms linear infinite;
+	-moz-animation: rotate-back 10000ms linear infinite;
+	-ms-animation: rotate-back 10000ms linear infinite;
+	animation: rotate-back 10000ms linear infinite;
+}
+
+.gearright4{
+	background: url(../images/gears.png) no-repeat 0 -356px;
+	width: 125px;
+	height: 124px;
+	position:absolute;
+	left:215px;
+	bottom:500px;
+
+	-webkit-animation: rotate-back 10000ms linear infinite;
+	-moz-animation: rotate-back 10000ms linear infinite;
+	-ms-animation: rotate-back 10000ms linear infinite;
+	animation: rotate-back 10000ms linear infinite;
+}
+
+.gearright12{
+	background: url(../images/gears.png) no-repeat 0 -530px;
+	width: 164px;
+	height: 164px;
+	position:absolute;
+	left:317px;
+	bottom:380px;
+
+	-webkit-animation: rotate 8000ms linear infinite;
+	-moz-animation: rotate 8000ms linear infinite;
+	-ms-animation: rotate 8000ms linear infinite;
+	animation: rotate 8000ms linear infinite;
+}
+
+.gearright11{
+	background: url(../images/gears.png) no-repeat 0 -356px;
+	width: 125px;
+	height: 124px;
+	position:absolute;
+	left:-3px;
+	bottom:250px;
+
+	-webkit-animation: rotate-back 10000ms linear infinite;
+	-moz-animation: rotate-back 10000ms linear infinite;
+	-ms-animation: rotate-back 10000ms linear infinite;
+	animation: rotate-back 10000ms linear infinite;
+}
+
+.gearright8{
+	background: url(../images/gears.png) no-repeat -371px -158px;
+	width: 72px;
+	height: 72px;
+	position:absolute;
+	left:-35px;
+	bottom:376px;
+
+	-webkit-animation: rotate 6000ms linear infinite;
+	-moz-animation: rotate 6000ms linear infinite;
+	-ms-animation: rotate 6000ms linear infinite;
+	animation: rotate 6000ms linear infinite;
+}
+
+.gearright1{
+	background: url(../images/gears.png) no-repeat -376px -543px;
+	width: 135px;
+	height: 134px;
+	position:absolute;
+	left:-132px;
+	bottom:412px;
+
+	-webkit-animation: rotate-back 10000ms linear infinite;
+	-moz-animation: rotate-back 10000ms linear infinite;
+	-ms-animation: rotate-back 10000ms linear infinite;
+	animation: rotate-back 10000ms linear infinite;
+}
+.gearright5{
+	background: url(../images/gears.png) no-repeat -376px -723px;
+	width: 134px;
+	height: 135px;
+	position:absolute;
+	left:-126px;
+	top:274px;
+
+	-webkit-animation: rotate 10000ms linear infinite;
+	-moz-animation: rotate 10000ms linear infinite;
+	-ms-animation: rotate 10000ms linear infinite;
+	animation: rotate 10000ms linear infinite;
+}
+
+.gearright2{
+	background: url(../images/gears.png) no-repeat 0 -1364px;
+	width: 80px;
+	height: 79px;
+	position:absolute;
+	left:20px;
+	top:305px;
+
+	-webkit-animation: rotate 2000ms linear infinite;
+	-moz-animation: rotate 2000ms linear infinite;
+	-ms-animation: rotate 2000ms linear infinite;
+	animation: rotate 2000ms linear infinite;
+}
+
+/* Softwares */
+.adobe{
+	background: #ffc207;
+	width: 133px;
+	height: 147px;
+	position:absolute;
+	left:39px;
+	top:60px;
+	opacity: 0;
+	 transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+.adobe:hover {
+	opacity: 1;
+}
+.adobe h2{
+	margin-top: -20px;
+	font-size: 20px;
+	text-align: center;
+	text-transform: none;
+	line-height: 20px;
+}
+.adobe img{
+	padding: 30px 0 0 0;
+}
+.adobe img:hover{
+	opacity: 1;
+}
+.blender{
+	background: #f9b82a;
+	width: 80px;
+	height: 80px;
+	position:absolute;
+		left:360px;
+	top:153px;
+
+	opacity: 0;
+	 transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+.blender:hover {
+	opacity: 1;
+}
+.blender h2{
+	margin-top: -20px;
+	font-size: 16px;
+	text-align: center;
+	text-transform: none;
+	line-height: 16px;
+}
+.blender img{
+	padding: 20px 0 0 0;
+}
+.blender img:hover{
+	opacity: 1;
+}
+.studio3d {
+	background: #f3ae49;
+	width: 60px;
+	height: 60px;
+	position:absolute;
+top:60px;
+left: 243px;
+	opacity: 0;
+	 transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+.studio3d:hover {
+	opacity: 1;
+}
+.studio3d h2{
+	margin-top: -20px;
+	font-size: 11px;
+	text-align: center;
+	text-transform: none;
+	line-height: 12px;
+}
+.studio3d img{
+	padding: 20px 0 0 12px;
+}
+.studio3d img:hover{
+	opacity: 1;
+}
+
+.maia {
+	background: #faddb3;
+	width: 65px;
+	height: 65px;
+	position:absolute;
+top:302px;
+left: 163px;
+	opacity: 0;
+	 transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+.maia:hover {
+	opacity: 1;
+}
+.maia h2{
+	margin-top: -21px;
+	font-size: 14px;
+	text-align: center;
+	text-transform: none;
+	line-height: 14px;
+}
+.maia img{
+	padding: 20px 0 0 0;
+}
+.maia img:hover{
+	opacity: 1;
+}
+
+/* Keyframes das animações presentes */
+/* Rotação */
+@keyframes "rotate" {
+ from {
+    -webkit-transform: rotate(0deg);
+   	-moz-transform: rotate(0deg);
+   	-o-transform: rotate(0deg);
+   	-ms-transform: rotate(0deg);
+   	transform: rotate(0deg);
+ }
+ to {
+    -webkit-transform: rotate(360deg);
+   	-moz-transform: rotate(360deg);
+   	-o-transform: rotate(360deg);
+   	-ms-transform: rotate(360deg);
+   	transform: rotate(360deg);
+ }
+}
+
+@-moz-keyframes rotate {
+ from {
+   -moz-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -moz-transform: rotate(360deg);
+   transform: rotate(360deg);
+ }
+}
+
+@-webkit-keyframes "rotate" {
+ from {
+   -webkit-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
+ }
+}
+
+@-ms-keyframes "rotate" {
+ from {
+   -ms-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -ms-transform: rotate(360deg);
+   transform: rotate(360deg);
+ }
+}
+
+@-o-keyframes "rotate" {
+ from {
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -o-transform: rotate(360deg);
+   transform: rotate(360deg);
+ }
+}
+/* Rotação inversa */
+@keyframes "rotate-back" {
+ from {
+    -webkit-transform: rotate(0deg);
+   	-moz-transform: rotate(0deg);
+   	-o-transform: rotate(0deg);
+   	-ms-transform: rotate(0deg);
+   	transform: rotate(0deg);
+ }
+ to {
+    -webkit-transform: rotate(-360deg);
+   	-moz-transform: rotate(-360deg);
+   	-o-transform: rotate(-360deg);
+   	-ms-transform: rotate(-360deg);
+   	transform: rotate(-360deg);
+ }
+}
+
+@-moz-keyframes rotate-back {
+ from {
+   -moz-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -moz-transform: rotate(-360deg);
+   transform: rotate(-360deg);
+ }
+}
+
+@-webkit-keyframes "rotate-back" {
+ from {
+   -webkit-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -webkit-transform: rotate(-360deg);
+   transform: rotate(-360deg);
+ }
+}
+
+@-ms-keyframes "rotate-back" {
+ from {
+   -ms-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -ms-transform: rotate(-360deg);
+   transform: rotate(-360deg);
+ }
+}
+
+@-o-keyframes "rotate-back" {
+ from {
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -o-transform: rotate(-360deg);
+   transform: rotate(-360deg);
+ }
+}
